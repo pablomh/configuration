@@ -49,8 +49,8 @@
     ports:
      - "9500:9200"
 
-# - name: update journal elasticsearch index
-#   shell: >
-#     {{ COMMON_BIN_DIR }}/python.journals {{ COMMON_BIN_DIR }}/manage.journals update_index
-#   become_user: "{{ journals_user }}"
-#   environment: "{{ journals_environment }}"
+- name: update journal elasticsearch index
+  shell: >
+    {{ COMMON_BIN_DIR }}/python.journals {{ COMMON_BIN_DIR }}/manage.journals update_index
+  become_user: "{{ journals_user }}"
+  environment: "{{ journals_environment }}"
