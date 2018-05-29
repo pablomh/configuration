@@ -30,8 +30,8 @@
     SANDBOX_ENABLE_INSIGHTS: true
     SANDBOX_ENABLE_RABBITMQ: true
   roles:
-    - role: swapfile
-      SWAPFILE_SIZE: 4GB
+#    - role: swapfile
+#      SWAPFILE_SIZE: 4GB
     - role: nginx
       nginx_sites:
       - certs
